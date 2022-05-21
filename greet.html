@@ -1,0 +1,21 @@
+<script src="greet.js"></script>
+
+<h1>HTML page - Greet</h1>
+
+<script>
+    var a = window.open('', '', 'height=500, width=500');
+    var response = Greet("Elizabeth");
+    console.log(response);
+    a.document.write(`<h3> ${response} </h3>`);
+    response = Greet("JOSE");
+    console.log(response);
+    a.document.write(`<h3> ${response} </h3>`);
+    response = Greet();
+    console.log(response);
+    response = Greet(['Jose','Pep']);
+    a.document.write(`<h3> ${response} </h3>`);
+    console.log(response);
+    response = Greet(['Alex','Arsene','Jose','Zidane']);
+    a.document.write(`<h3> ${response} </h3>`);
+    console.log(response);
+</script>

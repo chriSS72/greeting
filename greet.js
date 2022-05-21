@@ -1,4 +1,4 @@
-function Greet(name){
+function greet(name){
   // console.log(`is it an array?: ${Array.isArray(name)}`);
   if(Array.isArray(name) == false){
       if(name == null){ return "Hello there!"; } 

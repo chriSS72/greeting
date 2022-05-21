@@ -4,18 +4,18 @@
 
 <script>
     var a = window.open('', '', 'height=500, width=500');
-    var response = Greet("Elizabeth");
+    var response = greet("Elizabeth");
     console.log(response);
     a.document.write(`<h3> ${response} </h3>`);
-    response = Greet("JOSE");
+    response = greet("JOSE");
     console.log(response);
     a.document.write(`<h3> ${response} </h3>`);
-    response = Greet();
+    response = greet();
     console.log(response);
-    response = Greet(['Jose','Pep']);
+    response = greet(['Jose','Pep']);
     a.document.write(`<h3> ${response} </h3>`);
     console.log(response);
-    response = Greet(['Alex','Arsene','Jose','Zidane']);
+    response = greet(['Alex','Arsene','Jose','Zidane']);
     a.document.write(`<h3> ${response} </h3>`);
     console.log(response);
 </script>
